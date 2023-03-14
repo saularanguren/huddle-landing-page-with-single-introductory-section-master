@@ -13,7 +13,7 @@
 }
 
 body{
-    width: 100vw;
+    width: 100%;
     min-height: 100vh;
 
     display: flex;
@@ -218,11 +218,16 @@ body{
 }
 /* End Landing Page */
 
+/* Media Query For Tablet y Desktop */
 @media only screen and (min-width: 768px){
+
     body{
         height: 100vh;
         background-image: url(../images/bg-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
+
     #header{
         flex-basis: 15%;
 
@@ -231,7 +236,7 @@ body{
 
     .header{
         width: 90%;
-        max-width: 1300px;     
+        max-width: 1400px;     
     }
 
     .header__logo img{
@@ -249,7 +254,7 @@ body{
 
     .main{
         width: 90%;
-        max-width: 1300px;              
+        max-width: 1400px;              
 
         display: flex;
         justify-content: space-between;
@@ -301,7 +306,7 @@ body{
 
     .footer{
         width: 90%;
-        max-width: 1300px;
+        max-width: 1400px;
         padding: 0;
 
         justify-content: end;
@@ -311,3 +316,4 @@ body{
         justify-content: end;
     }
 }
+/* End Media Query For Tablet y Desktop */
